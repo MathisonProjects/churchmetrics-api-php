@@ -7,9 +7,8 @@
 	//Church Metrics Client
 	$CM_Client = new Rest(CHURCH_METRICS_EMAIL, CHURCH_METRICS_AUTH);
 	$params = array(
-		'url'            => 'records',
-		'church_id'      => 20976,
-		'week_reference' => 2390);
+		'url'            => 'churches',
+		'pagination'	 => false);
 	$data = $CM_Client->groups($params);
 
 	echo '<pre>';

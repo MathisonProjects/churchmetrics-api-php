@@ -63,7 +63,28 @@
 				$url = $url.'/'.$params['url'];
 				unset($params['url']);
 			}
-			return $this->fire($url, $params);
+			if (isset($params['pagination']) && $params['pagination'] == false) {
+				unset($params['pagination']);
+				return $this->paginationCleanse($url, $params);
+			} else {
+				return $this->fire($url, $params);
+			}
+		}
+
+		private function paginationCleanse($url,$params) {
+			$count = 30;
+	        $page  = 1;
+	        $list  = array();
+	        while ($count == 30) {
+	            $params['page'] = $page;
+	            $data = $this->fire($url, $params);
+	            foreach ($data as $item) {
+	                array_push($list, $item);
+	            }
+	            $count = count($data);
+	            $page++;
+	        }
+	        return $list;
 		}
 	}
 ?>
