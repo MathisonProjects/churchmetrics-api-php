@@ -1,0 +1,20 @@
+{
+    "name": "divinityfound/churchmetricsapiphp",
+    "description": "Free public churchmetrics.com API in PHP",
+    "authors": [
+        {
+            "name": "Jacob Mathison",
+            "email": "jmathison@bitbasic.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "guzzle/guzzle": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Divinityfound\\ChurchMetricsApiPhp": "src/"
+        }
+    },
+    "minimum-stability": "dev"
+}
