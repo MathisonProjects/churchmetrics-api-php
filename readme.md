@@ -96,7 +96,10 @@ $params  = ['url'			  => 'tags',
 $results = $CM_Client->groups($params);
 
 // Organizations
-$params  = [];
+$params  = ['url' 			 => 'me'];
+$params  = ['url' 			 => 'weekly_totals',
+			'category_id'    => '1', // Required
+			'week_reference' => '5275']; //Optional
 $results = $CM_Client->organizations($params);
 
 // Projections
