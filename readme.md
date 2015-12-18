@@ -1,16 +1,17 @@
 Church Metrics PHP API
 =================================================
 
+License: GNU
+
 Contents
 --------
-
 1. About
-2. Installation
+2. Installation via Composer
 3. Usage Example
 
 1. About
 --------
-Church Metrics did not have a publicly available PHP API, though they did have an API regardless... so I chose to remedy that situation to make it easier in the future to implement Church Metrics API via PHP.
+Church Metrics (originally) did not have a publicly available PHP API, though they did have an a public API... so I chose to remedy that situation to make it easier to implement Church Metrics API via PHP.
 
 2. Installation via Composer
 --------
