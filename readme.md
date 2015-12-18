@@ -111,6 +111,7 @@ $results = $CM_Client->records($params);
 
 // Regions
 $params  = [];
+$params  = ['url' => '1'];
 $results = $CM_Client->regions($params);
 
 // Service Times
