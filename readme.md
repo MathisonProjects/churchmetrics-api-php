@@ -18,7 +18,7 @@ Church Metrics (originally) did not have a publicly available PHP API, though th
 ```json
 {
 	"require": {
-		"Divinityfound/churchmetrics-api-php": "dev-master"
+		"divinityfound/churchmetricsapiphp": "dev-master"
 	},
 	"minimum-stability": "dev"
 }
