@@ -82,6 +82,9 @@ $params  = ['url'          => 'churches',
 			'tag_id'       => '1',
 			'pagination'   => true,
 			'page'         => '1'];
+$params  = ['url'          => 'tags',
+			'church_id'    => '1',
+			'tag_id'       => '1'];
 $results = $CM_Client->groups($params);
 
 // Organizations
