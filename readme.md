@@ -108,7 +108,10 @@ $params  = [];
 $results = $CM_Client->regions($params);
 
 // Service Times
-$params  = [];
+$params  = ['pagination' => true,
+			'page'       => '1',
+			'event_id'   => '1']; // Optional
+$params  = ['url'        => '1'];
 $results = $CM_Client->service_times($params);
 
 // Users
