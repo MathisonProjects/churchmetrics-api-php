@@ -44,4 +44,49 @@ define('CHURCH_METRICS_AUTH' , 'XXXXXXXXXXXXXXXXXXXX');
 //Implement Church Metrics Client
 $CM_Client = new Rest(CHURCH_METRICS_EMAIL, CHURCH_METRICS_AUTH);
 
+// Campuses
+$params = [];
+$CM_Client->campuses($params);
+
+// Categories
+$params = [];
+$CM_Client->categories($params);
+
+// Churches
+$params = [];
+$CM_Client->churches($params);
+
+// Events
+$params = [];
+$CM_Client->events($params);
+
+// Groups
+$params = [];
+$CM_Client->groups($params);
+
+// Organizations
+$params = [];
+$CM_Client->organizations($params);
+
+// Projections
+$params = [];
+$CM_Client->projections($params);
+
+// Records
+$params = [];
+$CM_Client->records($params);
+
+// Regions
+$params = [];
+$CM_Client->regions($params);
+
+// Service Times
+$params = [];
+$CM_Client->service_times($params);
+
+// Users
+$params = [];
+$CM_Client->users($params);
+
+
 ```
