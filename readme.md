@@ -3,6 +3,7 @@ Church Metrics PHP API
 
 Contents
 --------
+
 1. About
 2. Installation
 3. Usage Example
@@ -31,6 +32,7 @@ $ composer install
 --------
 
 ```php
+// Load Rest Client
 require_once(__DIR__ . '/../vendor/autoload.php');
 use \Divinityfound\ChurchMetricsApiPhp\Rest;
 
