@@ -51,7 +51,10 @@ $CM_Client = new Rest(CHURCH_METRICS_EMAIL, CHURCH_METRICS_AUTH);
 
 // Campuses
 $params  = [];
-$params  = ['url' => '1'];
+$params  = ['url' 			 => '1'];
+$params  = ['url' 			 => 'weekly_totals',
+			'category_id'    => '1', // Required
+			'week_reference' => '5275']; //Optional
 $results = $CM_Client->campuses($params);
 
 // Categories
