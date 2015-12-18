@@ -16,6 +16,8 @@ Church Metrics (originally) did not have a publicly available PHP API, though th
 To view the original API, visit here:
 https://github.com/lifechurch/churchmetrics-api
 
+Currently this API only "Gets" data from Church Metrics API. It does not modify any data (as of yet);
+
 2. Installation via Composer
 --------
 ```json
