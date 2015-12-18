@@ -6,7 +6,9 @@ License: GNU
 Contents
 --------
 1. About
+
 2. Installation via Composer
+
 3. Usage Example
 
 1. About
