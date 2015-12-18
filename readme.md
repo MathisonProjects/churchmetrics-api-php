@@ -63,7 +63,6 @@ $params  = ['url' => 'me'];
 $params  = ['url' => 'weekly_totals',
 			'category_id'    => '1',  // Required
 			'week_reference' => '1']; // Optional
-
 $results = $CM_Client->churches($params);
 
 // Events
@@ -114,7 +113,7 @@ $results = $CM_Client->service_times($params);
 
 // Users
 $params  = [];
+$params  = ['url' => '1'];
 $results = $CM_Client->users($params);
-
 
 ```
