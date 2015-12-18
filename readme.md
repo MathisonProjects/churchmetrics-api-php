@@ -67,24 +67,24 @@ $results = $CM_Client->events($params);
 
 // Groups
 $params  = ['url' 			  => 'records',
-			'church_id'       => '1',
-			'tag_id'          => '1',
-			'start_time'      => '1',
-			'end_time'        => '1',
-			'start_week'      => '1',
-			'end_week'        => '1',
-			'category_id'     => '1',
-			'event_id'        => '1',
-			'campus_id'       => '1',
-			'week_reference'  => '5275'];
+			'church_id'       => '1',     // Optional
+			'tag_id'          => '1',     // Optional
+			'start_time'      => '1',     // Optional
+			'end_time'        => '1',     // Optional
+			'start_week'      => '1',     // Optional
+			'end_week'        => '1',     // Optional
+			'category_id'     => '1',     // Optional
+			'event_id'        => '1',     // Optional
+			'campus_id'       => '1',     // Optional
+			'week_reference'  => '5275']; // Optional
 $params  = ['url' 			  => 'churches',
-			'church_id'       => '1',
-			'tag_id'          => '1',
+			'church_id'       => '1',     // Optional
+			'tag_id'          => '1',     // Optional
 			'pagination'      => true,
 			'page'            => '1'];
 $params  = ['url'			  => 'tags',
-			'church_id'       => '1',
-			'tag_id'          => '1'];
+			'church_id'       => '1',     // Optional
+			'tag_id'          => '1'];    // Optional
 $results = $CM_Client->groups($params);
 
 // Organizations
