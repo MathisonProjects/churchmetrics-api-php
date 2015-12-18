@@ -59,6 +59,7 @@ $results = $CM_Client->campuses($params);
 
 // Categories
 $params  = [];
+$params  = ['url' => '1'];
 $results = $CM_Client->categories($params);
 
 // Deprecated
