@@ -57,8 +57,13 @@ $results = $CM_Client->campuses($params);
 $params  = [];
 $results = $CM_Client->categories($params);
 
+// Deprecated
 // Churches
-$params  = [];
+$params  = ['url' => 'me'];
+$params  = ['url' => 'weekly_totals',
+			'category_id'    => '1',  // Required
+			'week_reference' => '1']; // Optional
+
 $results = $CM_Client->churches($params);
 
 // Events
