@@ -96,7 +96,13 @@ $params  = [];
 $results = $CM_Client->organizations($params);
 
 // Projections
-$params  = [];
+$params  = ['pagination' => true,
+			'page'       => '1',
+			'category_id'=> '1',
+			'campus_id'  => '1',
+			'start_week' => '1',
+			'end_week'   => '1'];
+$params  = ['url'        => '1'];
 $results = $CM_Client->projections($params);
 
 // Records
