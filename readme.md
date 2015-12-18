@@ -51,6 +51,7 @@ $CM_Client = new Rest(CHURCH_METRICS_EMAIL, CHURCH_METRICS_AUTH);
 
 // Campuses
 $params  = [];
+$params  = ['url' => '1'];
 $results = $CM_Client->campuses($params);
 
 // Categories
