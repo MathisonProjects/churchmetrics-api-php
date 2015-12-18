@@ -72,6 +72,7 @@ $results = $CM_Client->churches($params);
 
 // Events
 $params  = [];
+$params  = ['url' => '1'];
 $results = $CM_Client->events($params);
 
 // Groups
