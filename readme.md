@@ -110,7 +110,18 @@ $params  = ['url'        => '1'];
 $results = $CM_Client->projections($params);
 
 // Records
-$params  = [];
+$params  = ['url'			 => '1',
+			'pagination'     => true,
+			'page'           => '1',
+			'start_time'     => '1',
+			'end_time'       => '1',
+			'start_week'     => '1',
+			'end_week'       => '1',
+			'category_id'    => '1',
+			'event_id'       => '1',
+			'campus_id'      => '1',
+			'week_reference' => '1'];
+$params  = ['url'            => '1'];
 $results = $CM_Client->records($params);
 
 // Regions
