@@ -1,7 +1,7 @@
 Church Metrics PHP API
 =================================================
 
-License: GNU
+License: MIT
 
 Contents
 --------
